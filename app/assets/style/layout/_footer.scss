@@ -1,0 +1,134 @@
+.footer {
+  padding: 48px 40px 28px 40px;
+  @include pad {
+    padding: 40px;
+  }
+  @include mobile {
+    padding: 24px 15px 20px 15px;
+  }
+}
+.footer-content {
+  @include mobile {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 8px;
+  }
+}
+
+.footer-nav {
+  @include flex-center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.footer-nav-list {
+  @include flex-gap(48px);
+  @include pad {
+    gap: 40px;
+  }
+  @include mobile {
+    display: none;
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.footer-nav-social-icons {
+  @include flex-gap(32px);
+  @include pad {
+    gap: 24px;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.footer-info {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 24px;
+  @include pad {
+    padding-bottom: 16px;
+  }
+  @include mobile {
+    border-bottom: none;
+    margin-bottom: 0px;
+  }
+  li {
+    @include flex-center;
+    margin-bottom: 20px;
+    @include pad {
+      margin-bottom: 8px;
+    }
+  }
+  img {
+    margin-right: 20px;
+    @include pad {
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+    }
+  }
+}
+
+.footer-text {
+  font-size: 2.25rem;
+  @include pad {
+    font-size: 1.25rem;
+  }
+  @include mobile {
+    font-size: 1rem;
+  }
+}
+.footer-bottom {
+  @include flex-center;
+  position: relative;
+  color: white;
+  @include mobile {
+    margin-top: 18px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+.footer-brand-logo {
+  margin-right: 38px;
+  @include pad {
+    display: none;
+  }
+  @include mobile {
+    display: block;
+    order: 3;
+    width: 46px;
+    margin-right: 0;
+  }
+}
+
+.copyright-text {
+  @include mobile {
+    width: 100%;
+    margin-bottom: 7px;
+  }
+}
+
+.terms {
+  position: absolute;
+  right: 0;
+  @include flex-gap(62px);
+  @include pad {
+    position: absolute;
+    font-size: 0.875rem;
+    gap: 24px;
+  }
+  @include mobile {
+    position: static;
+    gap: 8px;
+    flex-direction: column;
+  }
+}

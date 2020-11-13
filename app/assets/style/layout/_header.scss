@@ -1,0 +1,48 @@
+.nav {
+  padding: 30px 88px;
+  justify-content: space-between;
+  @include flex-center;
+  @include pad {
+    padding: 30px 40px;
+  }
+  @include mobile {
+    padding: 10px 0 0 0;
+    flex-wrap: wrap;
+  }
+}
+
+.nav-logo {
+  @include mobile {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffffff;
+    img {
+      margin: 0 auto;
+      width: 48px;
+    }
+  }
+}
+
+.nav-list {
+  @include flex-gap(64px);
+  justify-content: flex-end;
+  @include list-hover;
+  @include pad {
+    gap: 40px;
+  }
+  @include mobile {
+    flex-wrap: wrap;
+    gap: 0;
+    width: 100%;
+    li {
+      width: 50%;
+      font-size: font(1.25);
+      padding: 8px 0;
+      text-align: center;
+      border: 1px solid #ffffff;
+      a:hover {
+        border-bottom: none;
+      }
+    }
+  }
+}

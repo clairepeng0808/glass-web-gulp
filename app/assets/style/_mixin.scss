@@ -1,0 +1,53 @@
+@mixin pad {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin iphonex {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+@mixin flex-baseline {
+  display: flex;
+  align-items: baseline;
+}
+@mixin bg-img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+@mixin flex-gap($gap: 16px) {
+  display: flex;
+  gap: $gap;
+}
+@mixin hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@mixin list-hover {
+  li a {
+    padding-bottom: 10px;
+    &:hover {
+      border-bottom: 1px solid #ffffff;
+    }
+  }
+}
+
+@mixin box-text-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
