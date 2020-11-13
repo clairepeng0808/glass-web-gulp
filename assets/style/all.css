@@ -664,8 +664,10 @@ a {
 
 .frame-type-box {
   position: relative;
-  text-align: center;
-  max-width: 345px; }
+  text-align: center; }
+  @media (max-width: 768px) {
+    .frame-type-box {
+      max-width: 345px; } }
   .frame-type-box a::before {
     content: "";
     position: absolute;
