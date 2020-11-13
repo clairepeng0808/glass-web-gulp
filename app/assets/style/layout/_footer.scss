@@ -86,7 +86,7 @@
     font-size: 1rem;
   }
 }
-.footer-bottom {
+.footer-legal {
   @include flex-center;
   position: relative;
   color: white;
@@ -110,7 +110,7 @@
   }
 }
 
-.copyright-text {
+.copyright {
   @include mobile {
     width: 100%;
     margin-bottom: 7px;
