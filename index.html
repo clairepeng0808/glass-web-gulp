@@ -10,25 +10,25 @@
 </head>
 
 <body>
-    <header>
-        <nav class="nav bg-primary-light">
+    <header class="nav bg-primary-light">
+        <h1>
             <a class='nav-logo' href="index.html">
-                <img src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png" alt="brand-logo">
+                Glass Official Website
             </a>
-            <ul class='nav-list'>
-                <li><a href="#">系列鏡框</a></li>
-                <li><a href="#">門市據點</a></li>
-                <li><a href="#">部落格</a></li>
-                <li><a href="#">常見問題</a></li>
-            </ul>
-        </nav>
+        </h1>
+        <ul class='nav-list'>
+            <li><a href="#">系列鏡框</a></li>
+            <li><a href="#">門市據點</a></li>
+            <li><a href="#">部落格</a></li>
+            <li><a href="#">常見問題</a></li>
+        </ul>
     </header>
 
     
 <section class="banner">
-  <div class="container text-primary">
-    <h1 class='page-title'><span class="subtitle">Promise-Desert 2020 早春系列</span><br>
-      看得清，才能看得遠</h1>
+  <div class="container w-100 text-primary">
+    <h2 class='page-title'><span class="subtitle">Promise-Desert 2020 早春系列</span><br>
+      看得清，才能看得遠</h2>
   </div>
 </section>
 
@@ -168,16 +168,26 @@
     <h2 class="section-title">聯絡我們</h2>
     <p class='contact-intro'>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
     <form action="POST" class='contact-form'>
-      <label for="name">姓名</label>
-      <input type="text" id="name" name="name" placeholder="陳小明" required>
-      <label for="tel">聯絡電話</label>
-      <input type="tel" id="tel" name="tel" placeholder="0912-345-678" required>
-      <label for="email">電子郵件</label>
-      <input type="email" name='email' placeholder="example@email.com" required>
-      <label for="feedback">意見反應</label>
-      <textarea name="feedback" id="feedback" rows="6" placeholder="請輸入您的意見" required></textarea>
-      <p class='privacy'><input class='checkbox' id='privacy-checkbox' type="checkbox"
-          required>我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</p>
+      <div class="input-name">
+        <label for="name">姓名</label>
+        <input type="text" id="name" name="name" placeholder="陳小明" required>
+      </div>
+      <div class="input-tel">
+        <label for="tel">聯絡電話</label>
+        <input type="tel" id="tel" name="tel" placeholder="0912-345-678" required>
+      </div>
+      <div class="input-email">
+        <label for="email">電子郵件</label>
+        <input type="email" name='email' placeholder="example@email.com" required>
+      </div>
+      <div class="input-feecback">
+        <label for="feedback">意見反應</label>
+        <textarea name="feedback" id="feedback" rows="6" placeholder="請輸入您的意見" required></textarea>
+      </div>
+      <div class='input-privacy'>
+        <input class='checkbox' id='privacy' type="checkbox" required>
+        <label for="privacy">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+      </div>
       <input class='submit' type="button" value="確認送出">
     </form>
   </div>
@@ -217,10 +227,10 @@
                 </ul>
             </div>
 
-            <div class="footer-bottom">
+            <div class="footer-legal">
                 <img class='footer-brand-logo' src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png"
                     alt="brand-logo">
-                <p class="copyright-text">Copyright © 2020 Glasses.All rights reserved.</p>
+                <p class="copyright">Copyright © 2020 Glasses.All rights reserved.</p>
                 <ul class='terms'>
                     <li><a href="#">隱私權政策</a></li>
                     <li><a href="#">服務條款</a></li>

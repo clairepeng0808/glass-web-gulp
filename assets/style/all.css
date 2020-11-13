@@ -171,7 +171,6 @@ a {
   text-decoration: none; }
 
 .container {
-  width: 100%;
   max-width: 1110px;
   margin: 0 auto; }
 
@@ -193,6 +192,9 @@ a {
 .bg-secondary {
   background-color: #aa06010d; }
 
+.w-100 {
+  width: 100%; }
+
 .nav {
   padding: 30px 88px;
   -webkit-box-pack: justify;
@@ -211,25 +213,34 @@ a {
     .nav {
       padding: 10px 0 0 0;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; } }
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
-@media (max-width: 768px) {
-  .nav-logo {
-    width: 100%;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ffffff; }
-    .nav-logo img {
-      margin: 0 auto;
-      width: 48px; } }
+.nav-logo {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/logo.png");
+  width: 80px;
+  height: 49px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-size: contain; }
+  @media (max-width: 768px) {
+    .nav-logo {
+      margin: 0 auto 10px auto;
+      width: 48px;
+      height: 30px; } }
 
 .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 64px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+  gap: 64px; }
   .nav-list li a {
     padding-bottom: 10px; }
     .nav-list li a:hover {
@@ -357,7 +368,7 @@ a {
     .footer-text {
       font-size: 1rem; } }
 
-.footer-bottom {
+.footer-legal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,7 +378,7 @@ a {
   position: relative;
   color: white; }
   @media (max-width: 768px) {
-    .footer-bottom {
+    .footer-legal {
       margin-top: 18px;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -393,7 +404,7 @@ a {
       margin-right: 0; } }
 
 @media (max-width: 768px) {
-  .copyright-text {
+  .copyright {
     width: 100%;
     margin-bottom: 7px; } }
 
@@ -417,10 +428,6 @@ a {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; } }
-
-.container-form {
-  max-width: 730px;
-  margin: 0 auto; }
 
 .page-title {
   font-size: 4rem;
@@ -781,8 +788,11 @@ a {
       margin-bottom: 8px; } }
 
 .contact-form input[type="checkbox" i] {
-  width: 24px;
-  border: 1px solid #000000; }
+  margin: 0;
+  border: 4px solid #000000;
+  width: 22px;
+  height: 22px;
+  border-radius: 20px; }
 
 .contact-form input[type="button" i] {
   padding: 16px 0;
@@ -805,7 +815,18 @@ a {
     .contact-form input[type="button" i] {
       width: 165px; } }
 
-.contact-form .privacy {
-  margin-bottom: 20px; }
+.contact-form .input-privacy {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .contact-form .input-privacy .checkbox {
+    margin-right: 4px; }
+  @media (max-width: 992px) {
+    .contact-form .input-privacy {
+      margin-bottom: 20px; } }
 
 /*# sourceMappingURL=all.css.map */
