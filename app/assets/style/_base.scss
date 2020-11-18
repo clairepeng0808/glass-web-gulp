@@ -53,6 +53,13 @@ a {
   max-width: 1110px;
   margin: 0 auto;
 }
+.section-padding {
+  padding: 0 40px;
+
+  @include mobile {
+    padding: 0 15px;
+  }
+}
 .text-primary {
   color: $primary;
 }
@@ -73,4 +80,9 @@ a {
 }
 .w-100 {
   width: 100%;
+}
+
+.fa,
+.fas {
+  font-weight: 900;
 }
