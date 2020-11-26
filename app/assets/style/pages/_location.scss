@@ -118,6 +118,8 @@
 .branches {
   @include flex-gap(30px);
   flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
   margin-bottom: 304px;
   @include pad {
     margin-bottom: 104px;
@@ -128,18 +130,17 @@
 }
 
 .branch-card {
-  width: 350px;
+  width: 30%;
   border: 1px solid $light-grey;
   @include pad {
-    width: 335px;
+    width: 40%;
   }
   @include mobile {
-    width: 345px;
+    width: 75%;
   }
 
   img {
-    width: 348px;
-    height: 232.3px;
+    object-fit: cover;
   }
 
   &-title {
@@ -176,7 +177,9 @@
         }
       }
 
+      a,
       p {
+        color: #000;
         font-size: 1.25rem;
         @include pad {
           font-size: 0.875rem;
